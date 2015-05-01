@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- polyfill for Web components -->
+    <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
+    <script src="../bower_components/videojs/dist/video-js/video.js"></script>
+
+    <!-- web component wrapper -->
+    <link rel="import" href="../dist/video-js.html" />
+  </head>
+  <body>
+    <video-js id="test-player" controls poster="http://video-js.zencoder.com/oceans-clip.png">
+      <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+      <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+      <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
+      <track kind="captions" src="example-captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video-js>
+
+    <video-js id="test-player2" controls poster="http://video-js.zencoder.com/oceans-clip.png">
+      <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+      <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+      <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
+      <track kind="captions" src="example-captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video-js>
+
+    <script>
+    var player = document.getElementById('test-player').player();
+
+    player.on('play', function() {
+      setTimeout(function() {
+        player.pause();
+      }, 2000);
+    });
+
+    player.ready(function() {
+      player.play();
+    });
+    </script>
+  </body>
+</html>

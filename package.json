@@ -1,0 +1,38 @@
+{
+  "name": "videojs-webcomponent",
+  "version": "1.0.0",
+  "description": "Web component wrapper for video.js using polymer",
+  "main": "dist/video-js.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eXon/videojs-webcomponent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eXon/videojs-webcomponent/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-html-minifier": "^0.1.6",
+    "gulp-inline": "0.0.10",
+    "gulp-vulcanize": "^6.0.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "gulp",
+    "test": "gulp test"
+  },
+  "author": "Benoit Tremblay <trembl.ben@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "polymer",
+    "video",
+    "video-js",
+    "video.js",
+    "videojs",
+    "vjs",
+    "webcomponents",
+    "webcomponent"
+  ]
+}

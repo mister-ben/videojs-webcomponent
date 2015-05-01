@@ -1,0 +1,50 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="stylesheet" href="../bower_components/videojs/dist/video-js/video-js.min.css" />
+
+<template>
+  <video class="video-js vjs-default-skin"
+         poster="{{poster}}" preload="{{preload}}" controls="{{controls}}" width="{{width}}" height="{{height}}">
+      <content></content>
+  </video>
+</template>
+
+<script>
+Polymer({
+  is: 'video-js',
+
+  properties: {
+    poster: String,
+    controls: Boolean,
+    preload: {
+      type: String,
+      value: 'auto'
+    },
+    width: {
+      type: Number,
+      value: 640
+    },
+    height: {
+      type: Number,
+      value: 264
+    },
+    dataSetup: Object
+  },
+
+  ready: function() {
+    var component = this;
+
+    if (typeof this.dataSetup !== 'Object') {
+      this.dataSetup = {};
+    }
+
+    videojs(component.children[0], this.dataSetup || {}, function() {
+      var player = this;
+
+      // Expose the video.js player
+      component.player = function() {
+        return player;
+      }
+    });
+  }
+});
+</script>
