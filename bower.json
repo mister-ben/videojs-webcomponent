@@ -9,9 +9,9 @@
   "homepage": "http://www.videojs.com",
   "main": "dist/video-js.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.8"
   },
   "devDependencies": {
+    "polymer": "Polymer/polymer#^0.8",
     "videojs": "~4.12.5"
   },
   "keywords": [
