@@ -23,9 +23,9 @@ gulp.task('minimize', function() {
 
 gulp.task('copy', function() {
   gulp.src([
-    'bower_components/videojs/dist/video-js/font',
+    'bower_components/videojs/dist/video-js/font/**/*',
   ])
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist/font'));
 });
 
 gulp.task('test', function() {
