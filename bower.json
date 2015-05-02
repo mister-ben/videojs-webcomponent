@@ -1,12 +1,13 @@
 {
   "name": "videojs-webcomponent",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "authors": [
     "Benoit Tremblay <trembl.ben@gmail.com>"
   ],
   "description": "Polymer wrapper for video.js",
   "license": "MIT",
   "homepage": "http://www.videojs.com",
+  "main": "dist/video-js.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^0.8"
   },
