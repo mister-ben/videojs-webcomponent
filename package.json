@@ -1,6 +1,6 @@
 {
   "name": "videojs-webcomponent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web component wrapper for video.js using polymer",
   "main": "dist/video-js.html",
   "repository": {
