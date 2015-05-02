@@ -12,7 +12,7 @@
     "polymer": "Polymer/polymer#^0.8"
   },
   "devDependencies": {
-    "videojs": "~4.12.5",
+    "videojs": "~4.12.5"
   },
   "keywords": [
     "polymer",
