@@ -10,7 +10,7 @@ The only files that you need are in the `dist` folder. You can download them thr
 3. Download the ZIP on GitHub
 
 ### Import the Web component
-You can add the `video-js` Web component by adding this in your
+You can add the `video-js` Web component by adding this in your HTML file:<br />
 `<link rel="import" href="bower_components/dist/video-js.html" />`
 
 Make sure to not include `video.js` and `video-js.css` because it is bundled inside the Web component.
@@ -18,7 +18,7 @@ Make sure to not include `video.js` and `video-js.css` because it is bundled ins
 ### Web component shim (optional)
 Make sure that you support browsers that don't support Web component yet.
 
-`bower install webcomponentsjs`
+`bower install webcomponentsjs`<br />
 `<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>`
 
 ### Player instance
